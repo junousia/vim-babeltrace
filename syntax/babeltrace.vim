@@ -26,13 +26,12 @@ if !exists("did_babeltrace_syntax_inits")
   let did_babeltrace_syntax_inits = 1
   hi link babeltraceTimestamp            Comment
   hi link babeltraceHostname             Identifier
-  hi link babeltraceProvider             Type
-  hi link babeltraceTracepoint           Function
+  hi link babeltraceProvider             Identifier
   hi link babeltraceTimeDiff             Constant
   hi link babeltraceString               String
   hi link babeltraceInteger              Constant
   hi link babeltraceHex                  Constant
-  hi link babeltraceAttribute            Identifier
+  hi link babeltraceAttribute            Type
 endif
 
 let b:current_syntax="babeltrace"
