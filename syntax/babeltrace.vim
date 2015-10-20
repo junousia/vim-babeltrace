@@ -13,7 +13,7 @@ syn match babeltraceTracepoint "[a-zA-Z0-9\-_]\+"
 syn match babeltraceProviderSeparator ":" nextgroup=babeltraceTracepoint
 syn match babeltraceProvider "[a-zA-Z0-9_\-]\+" skipwhite nextgroup=babeltraceProviderSeparator
 syn match babeltraceHostname "[a-zA-Z_\-]\+\s" skipwhite nextgroup=babeltraceProvider
-syn match babeltraceTimeDiff "(.*)" skipwhite nextgroup=babeltraceHostname
+syn match babeltraceTimeDiff "(.*?)" skipwhite nextgroup=babeltraceHostname
 syn match babeltraceTimestamp "\[\d\d:\d\d:\d\d.\d\d\d\d\d\d\d\d\d\]" skipwhite nextgroup=babeltraceTimeDiff
 syn match babeltraceAttribute "[a-zA-Z0-9_]\+ "
 syn match babeltraceInteger "\d\+"
